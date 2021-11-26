@@ -3,6 +3,7 @@
   --title-color: #456467;
   --buttons-color: #00474b;
   --selected-button: #26c2ad;
+  --inputs-background: hsl(0, 0%, 100%);
 }
 
 * {
@@ -38,6 +39,19 @@
   background-color: var(--buttons-color);
 }
 
+.tip-input-label {
+  background-color: var(--inputs-background);
+  border: none;
+  width: 25rem;
+  border-radius: 0.5rem;
+  color: var(--buttons-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
 .tip-select-label {
   font-weight: 700;
   color: var(--title-color);
@@ -48,7 +62,7 @@
 .tip-select {
   columns: 3 auto;
   margin: 1rem;
-  width: 100%;
+  width: 90%;
 }
 
 .tip-btn {
@@ -89,6 +103,7 @@
   cursor: pointer;
   text-align: right;
   margin: 0.5rem auto;
+  background-color: var(--inputs-background);
 }
 
 .btn-container {
