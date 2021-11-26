@@ -1,7 +1,145 @@
+:root {
+  --background-color: #c4e4e7;
+  --title-color: #456467;
+  --buttons-color: #00474b;
+  --selected-button: #26c2ad;
+}
+
+* {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 1px;
+}
+
+.card {
+  position: relative;
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.input {
+  width: 55%;
+}
+
+.output-card {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  margin-right: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--buttons-color);
+}
+
+.tip-select-label {
+  font-weight: 700;
+  color: var(--title-color);
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.tip-select {
+  columns: 3 auto;
+  margin: 1rem;
+  width: 100%;
+}
+
 .tip-btn {
-  background-color: #00474b;
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--buttons-color);
+  color: white;
+  margin: 0.5rem auto;
 }
 
 .tip-btn-active {
-  background-color: #26c2ad;
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--selected-button);
+  color: var(--buttons-color);
+  margin: 0.5rem auto;
+}
+
+.tip-input {
+  width: 6.5rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: right;
+  margin: 0.5rem auto;
+}
+
+.btn-container {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+.output-tip-container {
+  margin-top: -10rem;
+}
+
+.output-tip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.first {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.second {
+  color: grey;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.output-tip-value-label {
+  margin-left: 4rem;
+}
+
+.output-tip-value {
+  color: var(--selected-button);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.reset-btn {
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: var(--selected-button);
+  color: var(--buttons-color);
 }

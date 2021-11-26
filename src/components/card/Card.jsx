@@ -52,11 +52,11 @@ const Card = () => {
         <div className="card">
             <div className="input">
                 <div className="input-bill">
-                    <span>Bill</span>
+                    <span className="tip-select-label">Bill</span>
                     <input  value={bill} onChange={(e) => setBill(e.target.value)}/>
                 </div>
                 <div className="input-tip">
-                    <span className>Select Tip %</span>
+                    <span className="tip-select-label">Select Tip %</span>
                     <div className="tip-select">
                         {tipButtons.map(tipButton => (
                             <button
@@ -71,22 +71,34 @@ const Card = () => {
                     </div>
                 </div>
                 <div className="input-people">
-                    <span>Number of People</span>
+                    <span className="tip-select-label">Number of People</span>
                     <input  value={people} onChange={(e) => setPeople(e.target.value)}/>
                 </div>
             </div>
-            <div className="output">
-                <div className="output-tip">
-                    <span>Tip Amount</span>
-                    <span>/ person</span>
-                    <span>${totalTipPerPerson.toFixed(2)}</span>
+            <div className="output-card">
+                <div className="output-tip-container">
+                    <div className="output-tip">
+                        <div className="output-tip-label">
+                            <span className="first">Tip Amount</span> <br/>
+                            <span className="second">/ person</span>
+                        </div>
+                        <div className="output-tip-value-label">
+                            <div className="output-tip-value">${totalTipPerPerson.toFixed(2)}</div>
+                        </div>
+                    </div>
+                    <div className="output-tip">
+                        <div className="output-tip-label">
+                            <div className="first">Total</div>
+                            <div className="second">/ person</div>
+                        </div>
+                        <div className="output-tip-value-label">
+                            <div className="output-tip-value">${totalTip.toFixed(2)}</div>
+                        </div>
+                    </div>
+                    <div className="btn-container">
+                        <button className="reset-btn" onClick={reset}>Reset</button>
+                    </div>
                 </div>
-                <div className="output-total">
-                    <span>Total</span>
-                    <span>/ person</span>
-                    <span>${totalTip.toFixed(2)}</span>
-                </div>
-                <button className="reset-btn" onClick={reset}>Reset</button>
             </div>
         </div>
     );
