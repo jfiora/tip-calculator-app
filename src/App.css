@@ -1,0 +1,12 @@
+:root {
+  --background-color: #c4e4e7;
+  --title-color: #456467;
+  --buttons-color: #00474b;
+  --selected-button: #26c2ad;
+}
+
+.App {
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+}
