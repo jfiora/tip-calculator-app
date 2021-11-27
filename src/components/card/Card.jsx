@@ -54,7 +54,7 @@ const Card = () => {
                 <div className="input-bill">
                     <div className="tip-select-label">Bill</div>
                     <div>
-                        <input className="tip-input-label" value={bill} onChange={(e) => setBill(e.target.value)}/>
+                        <input type="number" className="tip-input-label" value={bill} onChange={(e) => setBill(e.target.value)}/>
                     </div>
                 </div>
                 <div className="input-tip">
@@ -69,13 +69,13 @@ const Card = () => {
                                 {tipButton.label}
                             </button>
                         ))}
-                        <input className="tip-input" placeholder="Custom"  onChange={(e) => setTip(e.target.value)}/>
+                        <input type="number" className="tip-input" placeholder="Custom"  onChange={(e) => setTip(e.target.value)}/>
                     </div>
                 </div>
                 <div className="input-bill">
                     <div className="tip-select-label">Number of People</div>
                     <div>
-                        <input className="tip-input-label" value={people} onChange={(e) => setPeople(e.target.value)}/>
+                        <input type="number" className="tip-input-label" value={people} onChange={(e) => setPeople(e.target.value)}/>
                     </div>
                 </div>
             </div>

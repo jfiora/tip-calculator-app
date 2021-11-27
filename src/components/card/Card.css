@@ -3,7 +3,7 @@
   --title-color: #456467;
   --buttons-color: #00474b;
   --selected-button: #26c2ad;
-  --inputs-background: hsl(0, 0%, 100%);
+  --inputs-background: #dcebeb;
 }
 
 * {
@@ -157,4 +157,18 @@
   cursor: pointer;
   background-color: var(--selected-button);
   color: var(--buttons-color);
+}
+
+/*remove arrow on text input*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
