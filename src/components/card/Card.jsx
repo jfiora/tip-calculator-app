@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import './Card.css';
 
 const Card = () => {
-    const [bill, setBill] = useState(0);
+    const [bill, setBill] = useState(null);
     const [tip, setTip] = useState(5);
     const [people, setPeople] = useState(1);
     const [totalTip, setTotalTip] = useState(0);
@@ -37,7 +37,7 @@ const Card = () => {
     }
 
     function reset() {
-        setBill(0);
+        setBill("");
         setTip(5);
         setPeople(1);
         setTotalTip(0);
