@@ -40,7 +40,7 @@
   background-color: var(--buttons-color);
 }
 
-.tip-input-label {
+.tip-input-label-dollar {
   background-color: var(--inputs-background);
   border: none;
   width: 25rem;
@@ -51,6 +51,29 @@
   text-align: right;
   padding: 0.5rem;
   margin: 1rem;
+  background-image: url("../../assets/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-size: 0.8rem;
+  background-position: center;
+  background-position-x: 5%;
+}
+
+.tip-input-label-person {
+  background-color: var(--inputs-background);
+  border: none;
+  width: 25rem;
+  border-radius: 0.5rem;
+  color: var(--buttons-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-image: url("../../assets/icon-person.svg");
+  background-repeat: no-repeat;
+  background-size: 0.8rem;
+  background-position: center;
+  background-position-x: 5%;
 }
 
 .tip-select-label {
