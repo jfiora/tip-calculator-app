@@ -12,7 +12,6 @@
 }
 
 .card {
-  transform: translate(0, 30%);
   position: relative;
   width: 900px;
   height: 500px;

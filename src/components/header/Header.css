@@ -1,7 +1,7 @@
 h1 {
   font-size: 1.3rem;
   text-align: center;
-  transform: translate(0, 150%);
+  transform: translate(0, -50%);
   color: var(--title-color);
   text-transform: uppercase;
   letter-spacing: 1.1rem;
