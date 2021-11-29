@@ -110,7 +110,7 @@
   border-radius: 0.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.4em;
+  font-size: 1rem;
   cursor: pointer;
   background-color: var(--selected-button);
   color: var(--buttons-color);
@@ -123,7 +123,7 @@
   border: none;
   border-radius: 0.5rem;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.4em;
   cursor: pointer;
   text-align: right;
   margin: 0.5rem auto;
